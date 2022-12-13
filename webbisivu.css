@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato' , sans-serif;
+    color:black;
+    line-height: 1.6;
+}
+
+ul {
+
+    list-style-type: none;
+    Color:black;
+    }
+
+  h2, h4 {
+        font-weight: 300;
+        line-height: 1.2;
+        margin: 10px 0;
+    }
+
+h1 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+    text-align: center;
+}
+
+p {
+        margin: 10px 0;
+    }
+
+img {
+        width: 100%
+    }
+
+.logo {
+    position: left;
+    
+}
+
+.navbar {
+        background-color: blue;
+        color:lightblue;
+        height: 70px;
+
+        
+    }
+
+.navbar ul {
+    display:flex;
+}
+
+.navbar a{
+    color:lightblue;
+    padding: 10px;
+    margin: 0 5px;
+}
+.navbar .flex{
+        justify-content:space-between;
+    }
+
+    /*showcase */
+    .showcase {
+        height: 400px;
+        color: black;
+        position: relative;
+    
+    }
+
+.showcase .grid {
+    gap:5px;
+}
+
+.showcase-form {
+    top: 0;
+      background-color:
+
+}
+.showcase-form input{
+    outline: none;
+}
+
+
+.btn {
+    color:blue;
+    cursor: Pointer;
+}
+
+.btn:hover {
+    transform: scale(0.90);
+}
+.container {
+        max-width: 1100px;
+        margin: 0 auto;
+        ocerflow: auto;
+        padding: 0 40px;
+     }
+
+ .card {
+        background-color: blue;
+        border-radius: 10px;
+
+     }
+
+.flex {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         height: 100%;
+     }
+
+     .grid {
+         display: grid;
+         grid-template-columns:50%px;
+         gap: 10px;
+         height: 100%;
+     }
+.form-control{
+    flex-flow: 60px;
+    background-color: rgb(38, 38, 252);
+    width:20%;
+    height:auto;
+}
+
+.text-center {
+    text-align: center;
+}
+.img {
+    width: auto;
+    HEIGHT:AUTO;
+}
+
+P {
+    text-align: CENTER;
+    }
+
+    /* Mobile */
+
+    @media(max-width: 500px) {
+        .navbar {
+            height: 110px;
+        }
+        .navbar .flex {
+            flex-direction : column;
+         }
+         .navbar ul{
+             padding: 10px;
+         }
+    }
+
+    /* Tablet */
+    @media ( max-width 760px) {
+        .grid,
+        .showcase .grid,
+        .stats
+        .cli .grid,
+        .navbar, {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+
+        }
+    }
+
